@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/krix/catkin_ws/devel/setup.sh
+    local-name: /home/krix/ros-tutorial/devel/setup.sh
