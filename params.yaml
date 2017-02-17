@@ -1,0 +1,12 @@
+background_b: 225
+background_g: 120
+background_r: 120
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_thinkpad_x200__45771: 'http://ThinkPad-X200:45771/'}
+rosversion: '1.12.6
+
+  '
+run_id: 9a8c36d4-ef5f-11e6-964d-00262df7200c

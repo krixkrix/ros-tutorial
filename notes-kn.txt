@@ -1,0 +1,33 @@
+Do I need to do this for each terminal?
+Or add it to .bashrc?
+->  source devel/setup.bash
+
+# startup
+roscore
+
+rosnode list
+rosnode 
+
+rosrun turtlesim turtlesim_node __name:=my_turtle
+rosrun turtlesim turtle_teleop_key
+
+rosrun rqt_graph rqt_graph
+# ... mouse over effects
+
+rostopic echo /turtle1/cmd_vel
+#  ... and then try key control again
+
+# type of topic
+rostopic type /turtle1/cmd_vel
+
+# details of message
+rosmsg show geometry_msgs/Twist
+
+# post message
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2, 0.0, 0.0]' '[0.0, 0, 0.3]'
+
+rosservice
+rosparam
+
+# to work with rqt and launch
+sudo apt-get install ros-kinetic-rqt ros-kinetic-rqt-common-plugins ros-kinetic-turtlesim
